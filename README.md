@@ -29,7 +29,7 @@ The code before change is called : `base` or `bas`. The code after change is cal
 
 ### Statistical comparison
 
-The the distributions are ploted and compared. It is obvious that the new code is faster, i.e. `new < base`.  
+The distributions are ploted and compared. It is obvious that the new code is faster, i.e. `new < base`.  
 To determine by how much, a factor k is used and manually determined to test the following : `new < k * base`.  
 The best value of k is manually determined by dichotomy.  
 
@@ -38,9 +38,7 @@ To prove this, 3 statistical tests are performed:
 2. **t-test** : this test is valid when the sample size is large, even when the distribution is not normal  
 3. **Mann-Whitney-U test** : this test is non-parametric  
 
-
 ### Results
-
 
 | Test              | Results            |
 | ----------------- | ------------------ |
@@ -49,7 +47,7 @@ To prove this, 3 statistical tests are performed:
 | 3- Mann-Whitney-U | new < **0.655** * base |
 
 Each test gives a similar best k factor : **0.59 -- 0.648 -- 0.655**  
-Since the worst factor, **0.655**, is greater than 0.57 and 0.638, it passes all tests.
+Since the worst factor, **0.655**, is greater than 0.59 and 0.648, it passes all tests.
 
 #### Conclusion
 
